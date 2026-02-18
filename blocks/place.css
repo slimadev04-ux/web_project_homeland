@@ -1,0 +1,211 @@
+.places {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 148px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  column-gap: 40px;
+  align-items: start;
+}
+
+.place__title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  grid-column: 1 / span 2;
+  margin-top: 92px;
+  max-width: 460px;
+}
+
+.place__info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.place__image {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.place__link {
+  background: linear-gradient(180deg, #0278fe 0%, #003a7b 100%);
+  color: #ffffff;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 12px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 356px;
+  transition: opacity 0.3s ease;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.place__link:hover {
+  opacity: 0.8;
+}
+
+.place__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  gap: 48px;
+}
+
+.place__content--berea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  gap: 48px;
+}
+
+.place__content--muramvya {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  gap: 48px;
+}
+
+.place__info-container--guaruja {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  gap: 80px;
+}
+
+.place__artists {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.place__artist-title {
+  opacity: 1;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 1.2;
+  color: #aaaaaa;
+}
+
+.place__artist-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+}
+
+.place__paragraphs {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #ffffff;
+  gap: 25px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .places {
+    padding: 0 24px;
+    gap: 72px;
+  }
+
+  .place {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 28px;
+    row-gap: 0;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-top: 0;
+    grid-column: 1 / span 2;
+    max-width: 340px;
+    padding-top: 88px;
+  }
+
+  .place__image {
+    max-width: 100%;
+  }
+
+  .place__info-container {
+    gap: 32px;
+  }
+
+  .place__content,
+  .place__content--berea,
+  .place__content--muramvya,
+  .place__info-container--guaruja {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    row-gap: 40px;
+    align-items: start;
+  }
+
+  .place__title {
+    grid-column: 1 / span 2;
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0;
+    max-width: 100%;
+    padding-top: 88px;
+  }
+
+  .place__image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .place__link {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .place__info-container {
+    gap: 24px;
+  }
+
+  .place__content,
+  .place__content--berea,
+  .place__content--muramvya,
+  .place__info-container--guaruja {
+    max-width: 352px;
+    gap: 24px;
+  }
+
+  .place__paragraphs {
+    font-size: 16px;
+    line-height: 1.1;
+    gap: 20px;
+  }
+
+  .place__artist-name {
+    font-size: 16px;
+  }
+
+  .place__artist-title {
+    font-size: 11px;
+  }
+}
