@@ -39,6 +39,7 @@
 
 .place__link {
   background: linear-gradient(180deg, #0278fe 0%, #003a7b 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
@@ -48,7 +49,6 @@
   width: 100%;
   max-width: 356px;
   transition: opacity 0.3s ease;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .place__link:hover {
