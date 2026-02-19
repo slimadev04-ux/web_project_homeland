@@ -62,14 +62,14 @@
   gap: 48px;
 }
 
-.place__content--berea {
+.place__content-berea {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
   gap: 48px;
 }
 
-.place__content--muramvya {
+.place__content-muramvya {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
